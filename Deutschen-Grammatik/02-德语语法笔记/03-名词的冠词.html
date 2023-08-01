@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>名词的冠词 - Deutschen-Grammatik</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/style.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../Deutschen-Grammatik/01-封面与入门/02-资料简介.html">资料简介</a></li><li class="chapter-item expanded affix "><a href="../../Deutschen-Grammatik/01-封面与入门/01-封面.html">封面</a></li><li class="chapter-item expanded affix "><a href="../../Deutschen-Grammatik/01-封面与入门/03-发音规则.html">发音规则</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">基础语法体系</li><li class="chapter-item expanded "><a href="../../Deutschen-Grammatik/02-德语语法笔记/01-简单句的结构.html"><strong aria-hidden="true">1.</strong> 简单句的结构</a></li><li class="chapter-item expanded "><a href="../../Deutschen-Grammatik/02-德语语法笔记/02-名词的性数格.html"><strong aria-hidden="true">2.</strong> 名词的性数格</a></li><li class="chapter-item expanded "><a href="../../Deutschen-Grammatik/02-德语语法笔记/03-名词的冠词.html" class="active"><strong aria-hidden="true">3.</strong> 名词的冠词</a></li><li class="chapter-item expanded "><a href="../../Deutschen-Grammatik/02-德语语法笔记/04-代词基础.html"><strong aria-hidden="true">4.</strong> 代词基础</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Deutschen-Grammatik</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <h1 id="03-名词的冠词"><a class="header" href="#03-名词的冠词">03-名词的冠词</a></h1>
+<p>名词的冠词分为三种情况：</p>
+<ol>
+<li>定冠词（bestimmter Artikel）</li>
+<li>不定冠词（unbestimmter Artikel）</li>
+<li>否定冠词（Negationsartikel）</li>
+<li>零冠词（Nullartikel）</li>
+</ol>
+<p>冠词需要按照其后名词的性、数、格进行变化。</p>
+<h2 id="定冠词"><a class="header" href="#定冠词">定冠词</a></h2>
+<p>定冠词变格表如下：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>der</td><td>das</td><td>die</td><td>die</td></tr>
+<tr><td>第二格</td><td>des</td><td>des</td><td>der</td><td>der</td></tr>
+<tr><td>第三格</td><td>dem</td><td>dem</td><td>der</td><td>den</td></tr>
+<tr><td>第四格</td><td>den</td><td>das</td><td>die</td><td>die</td></tr>
+</tbody></table>
+</div>
+<p>（上表中，阳性、中性、阴性均指单数情况下。本笔记的表格均按照此格式书写。）</p>
+<p>定冠词的用法与英语中基本相同，不再赘述。</p>
+<h2 id="不定冠词"><a class="header" href="#不定冠词">不定冠词</a></h2>
+<p>不定冠词变格表如下：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>ein</td><td>ein</td><td>eine</td><td>-</td></tr>
+<tr><td>第二格</td><td>eines</td><td>eines</td><td>einer</td><td>-</td></tr>
+<tr><td>第三格</td><td>einem</td><td>einem</td><td>einer</td><td>-</td></tr>
+<tr><td>第四格</td><td>einen</td><td>ein</td><td>eine</td><td>-</td></tr>
+</tbody></table>
+</div>
+<p>为方便参考“按照不定冠词变格”的情况，以ein-作为词首，只写出后缀变形的变格表如下（由于ein-没有复数，故其复数情况参照其否定形式kein-的变格）：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>-</td><td>-</td><td>-e</td><td>-e</td></tr>
+<tr><td>第二格</td><td>-es</td><td>-es</td><td>-er</td><td>-er</td></tr>
+<tr><td>第三格</td><td>-em</td><td>-em</td><td>-er</td><td>-en</td></tr>
+<tr><td>第四格</td><td>-en</td><td>-</td><td>-e</td><td>-e</td></tr>
+</tbody></table>
+</div>
+<p>不定冠词的用法与英语中基本相同，不再赘述。</p>
+<h2 id="否定冠词"><a class="header" href="#否定冠词">否定冠词</a></h2>
+<p>否定冠词kein-是不定冠词ein-的否定，按照不定冠词变格。如下表：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>kein</td><td>kein</td><td>keine</td><td>keine</td></tr>
+<tr><td>第二格</td><td>keines</td><td>keines</td><td>keiner</td><td>keiner</td></tr>
+<tr><td>第三格</td><td>keinem</td><td>keinem</td><td>keiner</td><td>keinen</td></tr>
+<tr><td>第四格</td><td>keinen</td><td>kein</td><td>keine</td><td>keine</td></tr>
+</tbody></table>
+</div>
+<p>否定冠词用于否定使用不定冠词或零冠词的名词，也可以否定数词。例如：</p>
+<blockquote>
+<p>Das ist gar <strong>kein</strong> Problem.<br />
+绝对没问题。</p>
+</blockquote>
+<blockquote>
+<p>Es ist noch <strong>kein</strong> halbes Jahr her.<br />
+过了还不到半年。</p>
+</blockquote>
+<p>也有语法解释将否定冠词kein-看作是不定代词kein-的用法之一。综合比较而言，作否定冠词的解释更加便于理解。</p>
+<h2 id="零冠词"><a class="header" href="#零冠词">零冠词</a></h2>
+<p>零冠词即没有冠词。凭借英语的语法常识，就能够判断大多数零冠词的情况了。这里不再赘述，只举出比较特殊或容易混淆的情况。</p>
+<h3 id="1-中性的城市国家洲前不用冠词"><a class="header" href="#1-中性的城市国家洲前不用冠词">1. 中性的城市、国家、洲前不用冠词。</a></h3>
+<p>但是：江河湖海、山脉群岛等都需要冠词，部分特殊的国家或地区也需要冠词。</p>
+<blockquote>
+<p>Der Ural trennt Europa von Asien.<br />
+乌拉尔山脉把欧洲和亚洲分开。</p>
+</blockquote>
+<blockquote>
+<p>die Schweiz 瑞士<br />
+der Balkan 巴尔干半岛</p>
+</blockquote>
+<h3 id="2-职业军衔民族教籍国籍语言作表语时无冠词"><a class="header" href="#2-职业军衔民族教籍国籍语言作表语时无冠词">2. 职业、军衔、民族、教籍、国籍、语言作表语时无冠词。</a></h3>
+<blockquote>
+<p>Ich bin Lehrer.<br />
+我是教师。</p>
+</blockquote>
+<blockquote>
+<p>Der Arzt ist Christ.<br />
+医生是基督教徒。</p>
+</blockquote>
+<h3 id="3-作呼语时无冠词"><a class="header" href="#3-作呼语时无冠词">3. 作呼语时无冠词。</a></h3>
+<blockquote>
+<p>Kinder, ins Bett!<br />
+孩子们，该睡觉了！</p>
+</blockquote>
+<blockquote>
+<p>Guten Morgen!<br />
+早上好！</p>
+</blockquote>
+<h3 id="4-泛指的物质名词和抽象名词一般无冠词"><a class="header" href="#4-泛指的物质名词和抽象名词一般无冠词">4. 泛指的物质名词和抽象名词一般无冠词。</a></h3>
+<p>但是：作第二格时始终有冠词。</p>
+<blockquote>
+<p>Gesundheit geht vor Reichtum.<br />
+健康比财富更珍贵。</p>
+</blockquote>
+<blockquote>
+<p>der Sieg der Wahrheit<br />
+真理的胜利</p>
+</blockquote>
+<h3 id="5-情状状语等介词词组固定连词词组后不加冠词"><a class="header" href="#5-情状状语等介词词组固定连词词组后不加冠词">5. 情状状语等介词词组、固定连词词组后不加冠词。</a></h3>
+<blockquote>
+<p>die Hochschule für Fremdsprachen<br />
+外国语大学</p>
+</blockquote>
+<blockquote>
+<p>die Menschheit will in Frieden leben.<br />
+人类希望在和平环境里生活。</p>
+</blockquote>
+<blockquote>
+<p>Bei Licht besehen<br />
+严格说来</p>
+</blockquote>
+<blockquote>
+<p>in Hülle und Fülle<br />
+大量地</p>
+</blockquote>
+<h3 id="6-列举人或物时无冠词"><a class="header" href="#6-列举人或物时无冠词">6. 列举人或物时无冠词。</a></h3>
+<blockquote>
+<p>Haupttür und Treppe lagen auf dieser Schmalseite, dem Gewächshaus gegenüber.<br />
+大门和楼梯在这狭窄的一侧，花房的对面。</p>
+</blockquote>
+<blockquote>
+<p>Frühling, Sommer, Herbst und Winter sind die vier Jahreszeiten.<br />
+春夏秋冬是一年的四季。</p>
+</blockquote>
+<h3 id="7-wie构成的比喻中无冠词"><a class="header" href="#7-wie构成的比喻中无冠词">7. wie构成的比喻中无冠词。</a></h3>
+<blockquote>
+<p>Er ist so dumm wie Bohnenstroh.<br />
+他笨得像块木头。</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../Deutschen-Grammatik/02-德语语法笔记/02-名词的性数格.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../Deutschen-Grammatik/02-德语语法笔记/04-代词基础.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../Deutschen-Grammatik/02-德语语法笔记/02-名词的性数格.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../Deutschen-Grammatik/02-德语语法笔记/04-代词基础.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../../theme/sidebar.js"></script>
+
+
+    </body>
+</html>

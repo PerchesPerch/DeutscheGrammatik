@@ -1,0 +1,1055 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Deutschen-Grammatik</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/style.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="Deutschen-Grammatik/01-封面与入门/02-资料简介.html">资料简介</a></li><li class="chapter-item expanded affix "><a href="Deutschen-Grammatik/01-封面与入门/01-封面.html">封面</a></li><li class="chapter-item expanded affix "><a href="Deutschen-Grammatik/01-封面与入门/03-发音规则.html">发音规则</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">基础语法体系</li><li class="chapter-item expanded "><a href="Deutschen-Grammatik/02-德语语法笔记/01-简单句的结构.html"><strong aria-hidden="true">1.</strong> 简单句的结构</a></li><li class="chapter-item expanded "><a href="Deutschen-Grammatik/02-德语语法笔记/02-名词的性数格.html"><strong aria-hidden="true">2.</strong> 名词的性数格</a></li><li class="chapter-item expanded "><a href="Deutschen-Grammatik/02-德语语法笔记/03-名词的冠词.html"><strong aria-hidden="true">3.</strong> 名词的冠词</a></li><li class="chapter-item expanded "><a href="Deutschen-Grammatik/02-德语语法笔记/04-代词基础.html"><strong aria-hidden="true">4.</strong> 代词基础</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Deutschen-Grammatik</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <h1 id="资料简介"><a class="header" href="#资料简介">资料简介</a></h1>
+<h2 id="版本记录"><a class="header" href="#版本记录">版本记录</a></h2>
+<p>版本：Kartoffelsalat</p>
+<p>最后更新日期：2023年8月1日</p>
+<blockquote>
+<p>本Obsidian（Markdown）版本同时通过mdbook发布为了html网页。<br />
+因此本资料许多地方为html做了兼容性适配。 </p>
+<p><strong>如果您正在通过网页查看本资料</strong>，请注意以下问题：</p>
+<blockquote>
+<ol>
+<li>mdbook提供的搜索功能只能搜索英文和数字。</li>
+<li>URL的fragment兼容问题可能会使导向小标题的链接只能导向页面的开头。</li>
+<li>左侧边栏是整体目录，右侧边栏是页内目录。如看不到右侧边栏，请尝试缩放网页。</li>
+<li>手机端点击左上角≡按钮展开左侧边栏；手机端无法查看右侧边栏。</li>
+</ol>
+</blockquote>
+</blockquote>
+<h2 id="笔记说明"><a class="header" href="#笔记说明">笔记说明</a></h2>
+<p>主要为德语语法学习者提供一个通识的学习笔记。因此，本笔记不会事无巨细地记录所有语法细节和特殊情况，而是更多地以方便读者的角度进行安排。</p>
+<h2 id="文献推荐"><a class="header" href="#文献推荐">文献推荐</a></h2>
+<ol>
+<li>姚保琮、佟秀英：《德语应用语法》</li>
+<li>芦力军：《实用英语德语比较语法》 </li>
+<li>Hilke Dreyer, Richard Schmitt：《标准德语语法：精解与练习》</li>
+</ol>
+<h2 id="联系作者"><a class="header" href="#联系作者">联系作者</a></h2>
+<p>本资料仅为个人笔记，不作任何商业用途。</p>
+<p>联系作者以提出修改意见。感谢您！</p>
+<p>QQ：2890678504</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="封面"><a class="header" href="#封面">封面</a></h1>
+<p><img src="Deutschen-Grammatik/01-%E5%B0%81%E9%9D%A2%E4%B8%8E%E5%85%A5%E9%97%A8/../%E9%99%84%E4%BB%B6/%E9%99%84%E4%BB%B6-%E5%B0%81%E9%9D%A2%E4%B8%8E%E5%85%A5%E9%97%A8/Kartoffelsalat.png" alt="|300" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="发音规则"><a class="header" href="#发音规则">发音规则</a></h1>
+<h2 id="字母读音"><a class="header" href="#字母读音">字母读音</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>字母</th><th>音标</th><th>字母</th><th>音标</th><th>字母</th><th>音标</th></tr></thead><tbody>
+<tr><td>Aa</td><td>[a:]</td><td>Nn</td><td>[ɛn]</td><td>Ää</td><td>[ɛ:]</td></tr>
+<tr><td>Bb</td><td>[be:]</td><td>Oo</td><td>[o:]</td><td>Öö</td><td>[ø:]</td></tr>
+<tr><td>Cc</td><td>[tse:]</td><td>Pp</td><td>[pe:]</td><td>Üü</td><td>[y:]</td></tr>
+<tr><td>Dd</td><td>[de:]</td><td>Qq</td><td>[ku:]</td><td></td><td></td></tr>
+<tr><td>Ee</td><td>[e:]</td><td>Rr</td><td>[ɛr]</td><td></td><td></td></tr>
+<tr><td>Ff</td><td>[ɛf]</td><td>Ssß</td><td>[ɛs, 'ɛstset]</td><td></td><td></td></tr>
+<tr><td>Gg</td><td>[ge:]</td><td>Tt</td><td>[te:]</td><td></td><td></td></tr>
+<tr><td>Hh</td><td>[ha:]</td><td>Uu</td><td>[u:]</td><td></td><td></td></tr>
+<tr><td>Ii</td><td>[i:]</td><td>Vv</td><td>[fau:]</td><td></td><td></td></tr>
+<tr><td>Jj</td><td>[jɔt]</td><td>Ww</td><td>[ve:]</td><td></td><td></td></tr>
+<tr><td>Kk</td><td>[ka:]</td><td>Xx</td><td>[iks]</td><td></td><td></td></tr>
+<tr><td>Ll</td><td>[ɛl]</td><td>Yy</td><td>['Ypsilɔn]</td><td></td><td></td></tr>
+<tr><td>Mm</td><td>[ɛm]</td><td>Zz</td><td>[tsɛt]</td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<p>德语比英语多出了四个字母，即a，o，u三个元音的变元音ä，ö，ü和辅音s的双写形式ß（ß = ss，没有大写形式）。</p>
+<p>在符号缺失的情况下，允许在输入时使用ae代替ä，oe代替ö，ue代替ü。</p>
+<p>缩写词汇的读法采用单个字母的发音。尾字母读成降调，其余字母读成平调。</p>
+<h2 id="词汇读音"><a class="header" href="#词汇读音">词汇读音</a></h2>
+<h3 id="元音发音"><a class="header" href="#元音发音">元音发音</a></h3>
+<h4 id="发音一般规则"><a class="header" href="#发音一般规则">发音一般规则</a></h4>
+<p>元音字母有长音和短音两种发音。</p>
+<p>长音：</p>
+<ol>
+<li>开音节</li>
+<li>双写</li>
+<li>后接h</li>
+</ol>
+<p>短音：闭音节</p>
+<p>闭音节为元音后接连续的两个辅音字母。开音节为非闭音节的情况。</p>
+<p>不算词缀，一般单词的第一音节是重读音节，元音要读成平调；<br />
+单音节单词读成降调。</p>
+<h4 id="a"><a class="header" href="#a">a</a></h4>
+<p>[a:]——长音<br />
+[a]——短音<br />
+特例短音：an, ab, hat, man, das</p>
+<h4 id="i"><a class="header" href="#i">i</a></h4>
+<p>[i:]——长音<br />
+[i]——短音<br />
+特例短音：mit，im，in，bis，fit<br />
+备注：双写i用ie/ieh代替</p>
+<h4 id="o"><a class="header" href="#o">o</a></h4>
+<p>[o:]——长音<br />
+[ɒ]——短音<br />
+特例短音：ob</p>
+<h4 id="u"><a class="header" href="#u">u</a></h4>
+<p>[u:]——长音<br />
+[ʊ]——短音<br />
+特例短音：um，Bus<br />
+组合发音：ju [ju:] （汉语拼音 you 发音）</p>
+<h4 id="e"><a class="header" href="#e">e</a></h4>
+<p>[e:]——重读开音节、后接h、双写<br />
+[ɛ]——重读闭音节<br />
+[ə]——非重读音节<br />
+常见非重读前缀：be，ge，ver，ent，emp，er，zer<br />
+组合发音（词尾）：<br />
+er [ə:]<br />
+en [ən]<br />
+el [əl] </p>
+<h4 id="ä"><a class="header" href="#ä">ä</a></h4>
+<p>[ɛ:]——长音<br />
+[ɛ]——短音</p>
+<h4 id="ü"><a class="header" href="#ü">ü</a></h4>
+<p>[y:]——长音<br />
+[y]——短音（汉语拼音ü发音）</p>
+<h4 id="ö"><a class="header" href="#ö">ö</a></h4>
+<p>[ø:]——长音<br />
+[œ]——短音（以[o:]口型发[e:]音）</p>
+<h4 id="y半元音"><a class="header" href="#y半元音">y（半元音）</a></h4>
+<p>[y:]——长音<br />
+[y]——短音<br />
+（汉语拼音ü发音）</p>
+<h4 id="双元音"><a class="header" href="#双元音">双元音</a></h4>
+<p>[ai]——ei，ai，ay，ey<br />
+[ao]——au<br />
+[ɒy]——eu，äu</p>
+<p>注意：以下并不是双元音，要分开读：<br />
+ea，ao</p>
+<h3 id="辅音发音"><a class="header" href="#辅音发音">辅音发音</a></h3>
+<h4 id="发音一般规则-1"><a class="header" href="#发音一般规则-1">发音一般规则</a></h4>
+<p>辅音后接元音时为强读，不接元音时为弱读。</p>
+<p>位于词尾时浊辅音b，p，g需要分别清化为p，t，k。</p>
+<p>大部分辅音均按正常发音习惯发音，下面列出需要特殊记忆的辅音发音：</p>
+<h4 id="l"><a class="header" href="#l">l</a></h4>
+<p>强读[l]<br />
+弱读：（以舌阻碍气流）</p>
+<h4 id="r"><a class="header" href="#r">r</a></h4>
+<p>强读[r]（小舌音）<br />
+弱读[ə]</p>
+<h4 id="s"><a class="header" href="#s">s</a></h4>
+<p>强读[z]<br />
+弱读[s]<br />
+ss双写时视为弱读，等同于ß。</p>
+<h4 id="w"><a class="header" href="#w">w</a></h4>
+<p>[v]（咬唇发音）</p>
+<h4 id="v"><a class="header" href="#v">v</a></h4>
+<p>外来词中发浊音[v]<br />
+德语词中发清音[f]<br />
+组合发音：<br />
+ive [v]<br />
+iv [f]</p>
+<h4 id="c"><a class="header" href="#c">c</a></h4>
+<p>[k]——在元音a，o，u前、在辅音字母前、在词尾时<br />
+[ts]——在元音i，e前时</p>
+<h4 id="j"><a class="header" href="#j">j</a></h4>
+<p>[j]</p>
+<h4 id="x"><a class="header" href="#x">x</a></h4>
+<p>[ks]</p>
+<h4 id="z"><a class="header" href="#z">z</a></h4>
+<p>[ts]</p>
+<h4 id="y辅音"><a class="header" href="#y辅音">y（辅音）</a></h4>
+<p>[j]<br />
+组合发音：<br />
+ya（汉语拼音 ya 发音）<br />
+ye（汉语拼音 ye 发音）<br />
+yu（汉语拼音 you 发音）</p>
+<h4 id="ch"><a class="header" href="#ch">ch</a></h4>
+<p>在德语词中：
+[h]——前接元音a，o，u，au<br />
+[shi]——</p>
+<ol>
+<li>前接其他元音或辅音l，n，r</li>
+<li>后接元音e，i</li>
+</ol>
+<p>在外来词中：<br />
+[k]——位于词首，且后接a、o、l、r<br />
+[ʃ]——在法语词中</p>
+<p>组合发音：<br />
+sch [ʃ]<br />
+tsch [tʃ]</p>
+<h4 id="st-sp"><a class="header" href="#st-sp">st-sp</a></h4>
+<p>[ʃd]·[ʃb]——位于词首，后接元音
+[ʃt]·[ʃp]——位于词首，后不接元音
+[st]·[sp]——其他情况（如分属两个音节）</p>
+<h4 id="其他辅音组合发音"><a class="header" href="#其他辅音组合发音">其他辅音组合发音</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>辅音组合</th><th>发音</th><th>备注</th></tr></thead><tbody>
+<tr><td>th dt</td><td>[t]</td><td></td></tr>
+<tr><td>ck ch</td><td>[k]</td><td></td></tr>
+<tr><td>ph</td><td>[f]</td><td></td></tr>
+<tr><td>rh</td><td>[r]</td><td></td></tr>
+<tr><td>tz ts ds</td><td>[ts]</td><td></td></tr>
+<tr><td>ks chs</td><td>[ks]</td><td>s始终发清音</td></tr>
+<tr><td>pf</td><td>[pf]</td><td>p发气声</td></tr>
+<tr><td>qu</td><td>[kv]</td><td></td></tr>
+<tr><td>ng</td><td>[ŋ]</td><td></td></tr>
+<tr><td>ung</td><td>[oŋ]</td><td></td></tr>
+<tr><td>nk</td><td>[ŋk]</td><td></td></tr>
+<tr><td>ig</td><td>[ishi]</td><td></td></tr>
+<tr><td>tion</td><td>[tsion]</td><td>重音在o</td></tr>
+<tr><td>sion</td><td>[zion]</td><td>重音在o</td></tr>
+<tr><td>ssion</td><td>[sion]</td><td>重音在o</td></tr>
+<tr><td>ismus</td><td>[ismus]</td><td>重音在i</td></tr>
+</tbody></table>
+</div>
+<h2 id="句子读音"><a class="header" href="#句子读音">句子读音</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>句子类型</th><th>声调读法</th></tr></thead><tbody>
+<tr><td>陈述句</td><td>降调</td></tr>
+<tr><td>一般疑问句</td><td>升调</td></tr>
+<tr><td>特殊疑问句</td><td>降调</td></tr>
+<tr><td>选择疑问句</td><td>先升后降</td></tr>
+<tr><td>祈使句</td><td>降调</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="01-简单句的结构"><a class="header" href="#01-简单句的结构">01-简单句的结构</a></h1>
+<p>介绍德语的简单句类型，引入语序概念，有助于理解德语的基础句子结构。</p>
+<h2 id="四种简单句类型"><a class="header" href="#四种简单句类型">四种简单句类型</a></h2>
+<p>以下是德语最基本的四种简单句。</p>
+<ol>
+<li>陈述句（Aussagesatz）</li>
+<li>一般疑问句（Fragesatz）</li>
+<li>特殊疑问句（W-Frage: Fragesatz mit einem W-Wort）</li>
+<li>祈使句（Imperativsatz）</li>
+</ol>
+<h3 id="陈述句"><a class="header" href="#陈述句">陈述句</a></h3>
+<p>陈述句的谓语动词在第二位。例如：</p>
+<blockquote>
+<p>Peter spricht Deutsch.<br />
+彼得说德语。</p>
+<p>Wir sind in Deutschland.<br />
+我们在德国。</p>
+</blockquote>
+<p>分析如下：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Peter</th><th>spricht</th><th>Deutsch</th></tr></thead><tbody>
+<tr><td>汉语</td><td>彼得</td><td>说</td><td>德语</td></tr>
+<tr><td>成分</td><td>主语</td><td>谓语动词</td><td>其他成分（直接宾语）</td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th></th><th>Wir</th><th>sind</th><th>in Deutschland</th></tr></thead><tbody>
+<tr><td>汉语</td><td>我们</td><td>存在</td><td>在德国</td></tr>
+<tr><td>成分</td><td>主语</td><td>谓语动词</td><td>其他成分（地点状语）</td></tr>
+</tbody></table>
+</div>
+<p>上面展示的是陈述句的正语序，主语在第一位。但在反语序（“倒装句”）中，陈述句将需要强调的成分置于第一位。此时，主语在谓语动词后一位。如：</p>
+<blockquote>
+<p>Deutsch spricht Peter.<br />
+彼得说德语。</p>
+</blockquote>
+<p>关于语序的问题将在下一小节介绍。</p>
+<h3 id="一般疑问句"><a class="header" href="#一般疑问句">一般疑问句</a></h3>
+<p>一般疑问句的谓语动词在第一位。主语在谓语动词后一位。例如：</p>
+<blockquote>
+<p>Spricht Peter Deutsch?<br />
+彼得说德语吗？</p>
+</blockquote>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Spricht</th><th>Peter</th><th>Deutsch</th></tr></thead><tbody>
+<tr><td>汉语</td><td>说</td><td>彼得</td><td>德语</td></tr>
+<tr><td>成分</td><td>谓语动词</td><td>主语</td><td>其他成分（直接宾语）</td></tr>
+</tbody></table>
+</div>
+<h3 id="特殊疑问句"><a class="header" href="#特殊疑问句">特殊疑问句</a></h3>
+<p>特殊疑问句的谓语动词在第二位。主语在谓语动词后一位。例如：</p>
+<blockquote>
+<p>Wann kommst du?<br />
+你什么时候来？</p>
+</blockquote>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Wann</th><th>kommst</th><th>du</th></tr></thead><tbody>
+<tr><td>汉语</td><td>什么时候</td><td>来</td><td>你</td></tr>
+<tr><td>成分</td><td>特殊疑问词</td><td>谓语动词</td><td>主语</td></tr>
+</tbody></table>
+</div>
+<p>特殊疑问句可以看作——反语序的陈述句，将需要强调的第一位部分替换为特殊疑问词而得来的。即被疑问的就是被强调的。以上面的句子为例：</p>
+<blockquote>
+<p>Ich komme dann.<br />
+我到时候来。（陈述句正语序）</p>
+<p><strong>Dann</strong> komme ich.<br />
+我到时候来。（陈述句反语序）</p>
+<p><strong>Wann</strong> kommst du?<br />
+你什么时候来？（特殊疑问句）</p>
+</blockquote>
+<h3 id="祈使句"><a class="header" href="#祈使句">祈使句</a></h3>
+<p>祈使句的谓语动词在第一位。祈使对象（“主语”）在谓语动词后一位，或者直接省略。</p>
+<p>例如：</p>
+<blockquote>
+<p>Kommen Sie bitte!<br />
+请您过来！</p>
+<p>Sprecht leise!<br />
+说话小声点！</p>
+</blockquote>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Kommen</th><th>Sie</th><th>bitte!</th></tr></thead><tbody>
+<tr><td>汉语</td><td>来</td><td>您</td><td>请</td></tr>
+<tr><td>成分</td><td>谓语动词</td><td>主语</td><td>其他成分</td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th></th><th>Sprecht</th><th>-</th><th>leise!</th></tr></thead><tbody>
+<tr><td>汉语</td><td>说话</td><td>-</td><td>小声</td></tr>
+<tr><td>成分</td><td>谓语动词</td><td>-</td><td>其他成分</td></tr>
+</tbody></table>
+</div>
+<h2 id="三种句子语序"><a class="header" href="#三种句子语序">三种句子语序</a></h2>
+<p>语序这一语法概念主要表示句中谓语的位置。德语有三种语序：</p>
+<ol>
+<li>正语序</li>
+<li>反语序</li>
+<li>尾语序</li>
+</ol>
+<p>为示例语序，在下面的例句中，使用斜体标识主语、粗体标识谓语。复合谓语的情况请参看介绍情态动词和助动词的部分。</p>
+<h3 id="正语序"><a class="header" href="#正语序">正语序</a></h3>
+<p>正语序即谓语在主语之后。一般结构为：</p>
+<ul>
+<li>主语—谓语—其他成分</li>
+</ul>
+<p>使用正语序的句子类型包括：</p>
+<ol>
+<li>陈述句；</li>
+<li>对主语提问的特殊疑问句（特殊疑问词占据了主语的位置）。</li>
+</ol>
+<p>注意：如果谓语是复合谓语，则有人称变化的部分居主语后一位。</p>
+<blockquote>
+<p><em>Alle</em> <strong>verlassen</strong> das Zimmer, und <em>ich</em> <strong>soll bleiben</strong>.<br />
+所有人都离开了房间，而让我留了下来。</p>
+</blockquote>
+<h3 id="反语序"><a class="header" href="#反语序">反语序</a></h3>
+<p>反语序即谓语在主语之前。一般结构为：</p>
+<ul>
+<li>（非主语成分）—谓语—主语—其他成分</li>
+</ul>
+<p>使用反语序的句子类型包括：</p>
+<ol>
+<li>陈述句；</li>
+<li>一般疑问句；</li>
+<li>特殊疑问句；</li>
+<li>祈使句。</li>
+</ol>
+<blockquote>
+<p>Überall <strong>sehe</strong> <em>ich</em> die grüne Farbe, die Farbe der Hoffnung.<br />
+我到处看到绿色，希望的颜色。</p>
+</blockquote>
+<p>注意：与正语序类似地，如果谓语是复合谓语，则有人称变化的部分居主语前一位。</p>
+<blockquote>
+<p>Dass du kommst, <strong>habe</strong> <em>ich</em> <strong>erwartet</strong>.<br />
+我曾等着你的到来。</p>
+</blockquote>
+<h3 id="尾语序"><a class="header" href="#尾语序">尾语序</a></h3>
+<p>尾语序即谓语在句尾。</p>
+<p>尾语序一般只出现在从句中（但不是所有从句都是尾语序）。</p>
+<blockquote>
+<p>Wenn <em>ich</em> Zeit <strong>hätte</strong> , käme ich gern mit.<br />
+如果有时间，我会一起去的。</p>
+</blockquote>
+<p>注意：类似地，如果从句的谓语是复合谓语，那么就把有人称变化的部分置于句尾，非人称变化的部分置于倒数第二或第三位。</p>
+<p>但是，在将来或完成时中，如果情态助动词以动词不定式出现，则仍将情态助动词置于句尾。有人称变化的时间助动词werden或haben则位于倒数第三位。</p>
+<blockquote>
+<p>Er sagt, dass <em>er</em> in Deutschland <strong>wird studieren können</strong>.<br />
+他说，他将能在德国上大学。</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="02-名词的性数格"><a class="header" href="#02-名词的性数格">02-名词的性数格</a></h1>
+<h2 id="名词的特点"><a class="header" href="#名词的特点">名词的特点</a></h2>
+<p>德语的名词在句子中始终需要首字母大写。</p>
+<p>德语的名词有三要素：</p>
+<ol>
+<li>性（Genus）</li>
+<li>数（Numerus）</li>
+<li>格（Kasus）</li>
+</ol>
+<p>名词的三要素有时会导致名词自身的变形，也会导致句中与其相关的其他词汇的变形。</p>
+<h2 id="名词的性"><a class="header" href="#名词的性">名词的性</a></h2>
+<p>名词的性分为三种：</p>
+<div class="table-wrapper"><table><thead><tr><th>性</th><th>简称</th></tr></thead><tbody>
+<tr><td>阳性</td><td>m. (maskulin)</td></tr>
+<tr><td>中性</td><td>n. (neutral)</td></tr>
+<tr><td>阴性</td><td>f. (feminin)</td></tr>
+</tbody></table>
+</div>
+<p>名词的性的规律不多，部分可以根据常见词尾进行猜测。例如：</p>
+<div class="table-wrapper"><table><thead><tr><th>性</th><th>常见词尾</th></tr></thead><tbody>
+<tr><td>阳性</td><td>-ant，-ast，-är，-ent，-eur，-iker，-ismus，-ist，-ling，-loge，-ner，-oph，-ör，-tor</td></tr>
+<tr><td>中性</td><td>-chen，-em，-ett，-lein，-ma，-ment，-nis，-o，-sal，-tum，-um</td></tr>
+<tr><td>阴性</td><td>-ade，-ät，-enz，-erei，-heit，-ie，-ik，-in，-ine，ion，-ive，-keit，-schaft，-sis，-thek，-unft，-ung，-ur</td></tr>
+</tbody></table>
+</div>
+<h2 id="名词的数"><a class="header" href="#名词的数">名词的数</a></h2>
+<h3 id="名词的数的区分"><a class="header" href="#名词的数的区分">名词的数的区分</a></h3>
+<p>名词的数分为两种：</p>
+<div class="table-wrapper"><table><thead><tr><th>数</th><th>简称</th></tr></thead><tbody>
+<tr><td>单数</td><td>Sg. (Singular)</td></tr>
+<tr><td>复数</td><td>Pl. (Plural)</td></tr>
+</tbody></table>
+</div>
+<h3 id="名词的数的变形"><a class="header" href="#名词的数的变形">名词的数的变形</a></h3>
+<p>名词在复数形式下会发生变形。变形有如下形式：</p>
+<ol>
+<li>添加后缀；</li>
+<li>变元音；</li>
+<li>不规则变形。</li>
+</ol>
+<h4 id="添加后缀"><a class="header" href="#添加后缀">添加后缀</a></h4>
+<p>添加后缀有一定的规律：</p>
+<div class="table-wrapper"><table><thead><tr><th>后缀</th><th>名词类型</th></tr></thead><tbody>
+<tr><td>-(e)n</td><td>以-e，-heit，-keit，-schaft，-rei，-ie，-ion，-ur，-ung结尾的很多阴性名词；<br>以-or，-ant，-ent，ist结尾的阳性名词；</td></tr>
+<tr><td>-er</td><td>单音节或短小的很多阳性或中性名词；<br>以-tum结尾的很多阳性或中性名词；</td></tr>
+<tr><td>-e</td><td>单音节或短小的很多名词；<br>以-al，-ar，-är，-ich，-ling结尾的很多阳性名词；</td></tr>
+<tr><td>-s</td><td>以-a，-i，-o，-y结尾的很多名词；<br>大多数外来词；<br>缩写；</td></tr>
+<tr><td>-</td><td>以-er，-en，-el，-ler结尾的很多阳性或中性名词；<br>以-chen，-lein结尾的很多中性名词；</td></tr>
+<tr><td>-nen</td><td>以-in结尾的很多表示职业的阴性名词；</td></tr>
+<tr><td>-se</td><td>以-nis结尾的很多阳性或中性名词；</td></tr>
+</tbody></table>
+</div>
+<p>以上表格并不全面，也有一些其他较为少见的后缀，如：</p>
+<blockquote>
+<p>das Material → die Material<strong>ien</strong>;</p>
+</blockquote>
+<h4 id="变元音"><a class="header" href="#变元音">变元音</a></h4>
+<p>变元音主要是以下四种情况：</p>
+<ol>
+<li>a→ä；</li>
+<li>o→ö；</li>
+<li>u→ü；</li>
+<li>au→äu。</li>
+</ol>
+<p>变元音一般出现在添加后缀-er，-e，-（无后缀）的情况中。</p>
+<h4 id="不规则变形"><a class="header" href="#不规则变形">不规则变形</a></h4>
+<p>少量名词的复数形式是不规则变形的。如：</p>
+<blockquote>
+<p>die Firma → die Firmen;<br />
+das Datum → die Daten;</p>
+</blockquote>
+<h2 id="名词的格"><a class="header" href="#名词的格">名词的格</a></h2>
+<h3 id="名词的格的区分"><a class="header" href="#名词的格的区分">名词的格的区分</a></h3>
+<p>名词的格分为四种，用于划分名词在句子中的不同语法功能。分别是：</p>
+<div class="table-wrapper"><table><thead><tr><th>格</th><th>简称</th><th>主要语法功能</th></tr></thead><tbody>
+<tr><td>第一格/主格</td><td>N. (Nominativ)</td><td>主语/表语</td></tr>
+<tr><td>第二格/属格</td><td>G. (Genitiv)</td><td>定语</td></tr>
+<tr><td>第三格/受格/与格</td><td>D. (Dativ)</td><td>间接宾语</td></tr>
+<tr><td>第四格/宾格</td><td>A. (Akkusativ)</td><td>直接宾语</td></tr>
+</tbody></table>
+</div>
+<p>提供一个例子：</p>
+<blockquote>
+<p>Der Wagen der Fabrik schenkte dem Institut einen Tisch.<br />
+工厂的汽车给学院运送来一张桌子。</p>
+</blockquote>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Der Wagen</th><th>der Fabrik</th><th>schenkte</th><th>dem Institut</th><th>einen Tisch</th></tr></thead><tbody>
+<tr><td>汉语</td><td>汽车</td><td>工厂</td><td>运送</td><td>学院</td><td>一张桌子</td></tr>
+<tr><td>格</td><td>第一格</td><td>第二格</td><td>谓语动词</td><td>第三格</td><td>第四格</td></tr>
+</tbody></table>
+</div>
+<p>这是最常见的四格用法，也最方便理解。当然，也有其他语法功能的情况，这在第三格与第四格的区分上尤为显著。</p>
+<h3 id="第三格与第四格"><a class="header" href="#第三格与第四格">第三格与第四格</a></h3>
+<p>第三格与第四格区分的情况主要有：</p>
+<ol>
+<li>谓语动词的要求；</li>
+<li>介词的要求；</li>
+<li>其他特殊情况。</li>
+</ol>
+<h4 id="谓语动词的要求"><a class="header" href="#谓语动词的要求">谓语动词的要求</a></h4>
+<p>及物动词支配第四格名词作宾语。需要支配双宾语时，就会区分出直接宾语（第四格）和间接宾语（第三格），这是最常见的区分，在上面的例子中就可以看到。</p>
+<p>不及物动词不能支配第四格名词，所以直接要求第三格名词作宾语。例如：</p>
+<blockquote>
+<p>Der Pullover gefällt <strong>mir</strong>.<br />
+这件毛衣正合我意。</p>
+</blockquote>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Der Pullover</th><th>gefällt</th><th>mir</th></tr></thead><tbody>
+<tr><td>汉语</td><td>这件毛衣</td><td>满意</td><td>我</td></tr>
+<tr><td>格</td><td>第一格</td><td>谓语动词</td><td>第三格</td></tr>
+</tbody></table>
+</div>
+<h4 id="介词的要求"><a class="header" href="#介词的要求">介词的要求</a></h4>
+<p>部分介词只要求后面的名词以第四格的形式出现，如für，gegen，durch，um，ohne等；</p>
+<p>部分介词只要求后面的名词以第三格的形式出现，如aus，außer，bei，entgegen，entsprechend，gegenüber，gemäß，mit，nach，nahe，nebst，samt，seit，von，zu，zufolge等；</p>
+<p>部分介词后面可以支配第三格，也可以支配第四格。一般是表示方位的介词，如in，an，auf，vor，hinter，über，unter，neben，zwischen等。这种情况下，支配第三格与第四格的句意是有区别的。例如：</p>
+<blockquote>
+<p>Ich fahre <strong>in die</strong> Stadt. 我开车去城里。（第四格）<br />
+Ich fahre <strong>in der</strong> Stadt. 我在城里开车。（第三格）</p>
+</blockquote>
+<p>因此，在这时：针对第四格提问时，特殊疑问词用wohin（去哪里）；针对第三格提问时，特殊疑问词用wo（在哪里）。</p>
+<h4 id="其他特殊情况"><a class="header" href="#其他特殊情况">其他特殊情况</a></h4>
+<h5 id="形容词的要求"><a class="header" href="#形容词的要求">形容词的要求</a></h5>
+<p>部分可以支配名词的形容词，要求支配第四格名词。如：</p>
+<blockquote>
+<p>Das Ergebnis ist <strong>diesen Aufwand</strong> wert.<br />
+结果是值得这个花费的。</p>
+</blockquote>
+<h5 id="状语第四格"><a class="header" href="#状语第四格">状语第四格</a></h5>
+<p>名词单独构成时间状语或地点状语时，在句中以第四格形式出现。如：</p>
+<blockquote>
+<p>Ich trinke <strong>jeden Mittag</strong> eine Tasse Tee.<br />
+我每天中午喝一杯茶。</p>
+</blockquote>
+<h5 id="绝对第四格"><a class="header" href="#绝对第四格">绝对第四格</a></h5>
+<p>以第四格形式单独出现的句子成分，可以理解为省略了谓语动词的结构。如：</p>
+<blockquote>
+<p><strong>Das Messer</strong> in der Hand, kam er auf sie zu.<br />
+他拿着刀朝着她过来了。</p>
+</blockquote>
+<h5 id="自由第三格"><a class="header" href="#自由第三格">自由第三格</a></h5>
+<p>在表达“对某人来说”“某人觉得”等意义时，人无法作为主语（第一格）出现，因此以第三格形式出现。如：</p>
+<blockquote>
+<p>Es ist <strong>mir</strong> egal.<br />
+这事对我来说无所谓。</p>
+</blockquote>
+<blockquote>
+<p><strong>Mir</strong> ist langweilig.<br />
+我感觉无聊。</p>
+</blockquote>
+<p>如果人以第一格形式出现，则会改变句意：</p>
+<blockquote>
+<p><strong>Ich</strong> bin langweilig.<br />
+我这个人很无聊。 </p>
+</blockquote>
+<h3 id="名词的格的变形"><a class="header" href="#名词的格的变形">名词的格的变形</a></h3>
+<p>名词在不同格的形式下，有时会发生变形。格的变形只有一种：添加后缀。这一变形在单数第二格的阳性和中性、复数第三格的情况下发生：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td>第二格</td><td>-s/-es</td><td>-s/-es</td><td>-</td><td>-</td></tr>
+<tr><td>第三格</td><td>-</td><td>-</td><td>-</td><td>-n</td></tr>
+<tr><td>第四格</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</tbody></table>
+</div>
+<p>在“-s/-es”的情况中，有如下规则：</p>
+<ol>
+<li>多音节名词添加-s；</li>
+<li>单音节名词多数添加-es；</li>
+<li>以-s，-ss，-ß，-x，-z，-tz结尾的名词添加-es。</li>
+</ol>
+<p>例如：</p>
+<blockquote>
+<p>des Lehrer<strong>s</strong>; des Mann<strong>es</strong>; des Glas<strong>es</strong></p>
+</blockquote>
+<p>同时需要注意，对于复数第三格名词，其复数形式已经变形为以n或s结尾，就不另外添加格的变形后缀-n了。</p>
+<h2 id="弱变化名词"><a class="header" href="#弱变化名词">弱变化名词</a></h2>
+<h3 id="弱变化名词的基本规则"><a class="header" href="#弱变化名词的基本规则">弱变化名词的基本规则</a></h3>
+<p>德语中有一部分阳性名词属于“弱变化名词”，这类名词在各种场合下（除阳性单数第一格）的变形都是添加后缀-n或-en。这一变形优先于通用的性数格变形规则。</p>
+<p>以弱变化名词“Mensch”的变化为例：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>单数（阳性）</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>der Mensch</td><td>die Mensch<strong>en</strong></td></tr>
+<tr><td>第二格</td><td>des Mensch<strong>en</strong></td><td>der Mensch<strong>en</strong></td></tr>
+<tr><td>第三格</td><td>dem Mensch<strong>en</strong></td><td>den Mensch<strong>en</strong></td></tr>
+<tr><td>第四格</td><td>den Mensch<strong>en</strong></td><td>die Mensch<strong>en</strong></td></tr>
+</tbody></table>
+</div>
+<h3 id="弱变化名词的例外情况"><a class="header" href="#弱变化名词的例外情况">弱变化名词的例外情况</a></h3>
+<p>der Herr和das Herz的复数形式为后缀-en，与弱变化形式的后缀不一致。此时，弱变化只在单数的情况下应用。注意到，das Herz是唯一的中性弱变化名词，它的后缀也是特殊的。</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>单数后缀</th><th>复数后缀</th></tr></thead><tbody>
+<tr><td>der Herr</td><td>-n</td><td>-en</td></tr>
+<tr><td>das Herz</td><td>-ens</td><td>-en</td></tr>
+</tbody></table>
+</div>
+<p>有另外7个名词的后缀也是特殊的。它们在单数第二格的情况下，后缀是-ns；在其他情况下，后缀仍是正常的-n。这些名词是：Name，Wille，Same，Glaube，Buchstabe，Funke，Gedanke。例如：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>单数（阳性）</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>der Name</td><td>die Name<strong>n</strong></td></tr>
+<tr><td>第二格</td><td>des Name<strong>ns</strong></td><td>der Name<strong>n</strong></td></tr>
+<tr><td>第三格</td><td>dem Name<strong>n</strong></td><td>den Name<strong>n</strong></td></tr>
+<tr><td>第四格</td><td>den Name<strong>n</strong></td><td>die Name<strong>n</strong></td></tr>
+</tbody></table>
+</div>
+<h3 id="弱变化名词的判断"><a class="header" href="#弱变化名词的判断">弱变化名词的判断</a></h3>
+<p>弱变化名词主要是以下这些名词：</p>
+<ol>
+<li>以-e结尾的，表示人或动物的阳性名词；</li>
+<li>以-e结尾的，不表示人和动物的阳性名词，单数第二格的后缀为-ns；</li>
+<li>以-ant，-at，-ent，-et，-graph，-ik，-ist，-it，-nom，-og(e)，-ot，-soph，-und，-rand结尾的很多外来阳性名词；</li>
+<li>其他一些阳性名词；唯一的中性弱变化名词das Herz。</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="03-名词的冠词"><a class="header" href="#03-名词的冠词">03-名词的冠词</a></h1>
+<p>名词的冠词分为三种情况：</p>
+<ol>
+<li>定冠词（bestimmter Artikel）</li>
+<li>不定冠词（unbestimmter Artikel）</li>
+<li>否定冠词（Negationsartikel）</li>
+<li>零冠词（Nullartikel）</li>
+</ol>
+<p>冠词需要按照其后名词的性、数、格进行变化。</p>
+<h2 id="定冠词"><a class="header" href="#定冠词">定冠词</a></h2>
+<p>定冠词变格表如下：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>der</td><td>das</td><td>die</td><td>die</td></tr>
+<tr><td>第二格</td><td>des</td><td>des</td><td>der</td><td>der</td></tr>
+<tr><td>第三格</td><td>dem</td><td>dem</td><td>der</td><td>den</td></tr>
+<tr><td>第四格</td><td>den</td><td>das</td><td>die</td><td>die</td></tr>
+</tbody></table>
+</div>
+<p>（上表中，阳性、中性、阴性均指单数情况下。本笔记的表格均按照此格式书写。）</p>
+<p>定冠词的用法与英语中基本相同，不再赘述。</p>
+<h2 id="不定冠词"><a class="header" href="#不定冠词">不定冠词</a></h2>
+<p>不定冠词变格表如下：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>ein</td><td>ein</td><td>eine</td><td>-</td></tr>
+<tr><td>第二格</td><td>eines</td><td>eines</td><td>einer</td><td>-</td></tr>
+<tr><td>第三格</td><td>einem</td><td>einem</td><td>einer</td><td>-</td></tr>
+<tr><td>第四格</td><td>einen</td><td>ein</td><td>eine</td><td>-</td></tr>
+</tbody></table>
+</div>
+<p>为方便参考“按照不定冠词变格”的情况，以ein-作为词首，只写出后缀变形的变格表如下（由于ein-没有复数，故其复数情况参照其否定形式kein-的变格）：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>-</td><td>-</td><td>-e</td><td>-e</td></tr>
+<tr><td>第二格</td><td>-es</td><td>-es</td><td>-er</td><td>-er</td></tr>
+<tr><td>第三格</td><td>-em</td><td>-em</td><td>-er</td><td>-en</td></tr>
+<tr><td>第四格</td><td>-en</td><td>-</td><td>-e</td><td>-e</td></tr>
+</tbody></table>
+</div>
+<p>不定冠词的用法与英语中基本相同，不再赘述。</p>
+<h2 id="否定冠词"><a class="header" href="#否定冠词">否定冠词</a></h2>
+<p>否定冠词kein-是不定冠词ein-的否定，按照不定冠词变格。如下表：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>kein</td><td>kein</td><td>keine</td><td>keine</td></tr>
+<tr><td>第二格</td><td>keines</td><td>keines</td><td>keiner</td><td>keiner</td></tr>
+<tr><td>第三格</td><td>keinem</td><td>keinem</td><td>keiner</td><td>keinen</td></tr>
+<tr><td>第四格</td><td>keinen</td><td>kein</td><td>keine</td><td>keine</td></tr>
+</tbody></table>
+</div>
+<p>否定冠词用于否定使用不定冠词或零冠词的名词，也可以否定数词。例如：</p>
+<blockquote>
+<p>Das ist gar <strong>kein</strong> Problem.<br />
+绝对没问题。</p>
+</blockquote>
+<blockquote>
+<p>Es ist noch <strong>kein</strong> halbes Jahr her.<br />
+过了还不到半年。</p>
+</blockquote>
+<p>也有语法解释将否定冠词kein-看作是不定代词kein-的用法之一。综合比较而言，作否定冠词的解释更加便于理解。</p>
+<h2 id="零冠词"><a class="header" href="#零冠词">零冠词</a></h2>
+<p>零冠词即没有冠词。凭借英语的语法常识，就能够判断大多数零冠词的情况了。这里不再赘述，只举出比较特殊或容易混淆的情况。</p>
+<h3 id="1-中性的城市国家洲前不用冠词"><a class="header" href="#1-中性的城市国家洲前不用冠词">1. 中性的城市、国家、洲前不用冠词。</a></h3>
+<p>但是：江河湖海、山脉群岛等都需要冠词，部分特殊的国家或地区也需要冠词。</p>
+<blockquote>
+<p>Der Ural trennt Europa von Asien.<br />
+乌拉尔山脉把欧洲和亚洲分开。</p>
+</blockquote>
+<blockquote>
+<p>die Schweiz 瑞士<br />
+der Balkan 巴尔干半岛</p>
+</blockquote>
+<h3 id="2-职业军衔民族教籍国籍语言作表语时无冠词"><a class="header" href="#2-职业军衔民族教籍国籍语言作表语时无冠词">2. 职业、军衔、民族、教籍、国籍、语言作表语时无冠词。</a></h3>
+<blockquote>
+<p>Ich bin Lehrer.<br />
+我是教师。</p>
+</blockquote>
+<blockquote>
+<p>Der Arzt ist Christ.<br />
+医生是基督教徒。</p>
+</blockquote>
+<h3 id="3-作呼语时无冠词"><a class="header" href="#3-作呼语时无冠词">3. 作呼语时无冠词。</a></h3>
+<blockquote>
+<p>Kinder, ins Bett!<br />
+孩子们，该睡觉了！</p>
+</blockquote>
+<blockquote>
+<p>Guten Morgen!<br />
+早上好！</p>
+</blockquote>
+<h3 id="4-泛指的物质名词和抽象名词一般无冠词"><a class="header" href="#4-泛指的物质名词和抽象名词一般无冠词">4. 泛指的物质名词和抽象名词一般无冠词。</a></h3>
+<p>但是：作第二格时始终有冠词。</p>
+<blockquote>
+<p>Gesundheit geht vor Reichtum.<br />
+健康比财富更珍贵。</p>
+</blockquote>
+<blockquote>
+<p>der Sieg der Wahrheit<br />
+真理的胜利</p>
+</blockquote>
+<h3 id="5-情状状语等介词词组固定连词词组后不加冠词"><a class="header" href="#5-情状状语等介词词组固定连词词组后不加冠词">5. 情状状语等介词词组、固定连词词组后不加冠词。</a></h3>
+<blockquote>
+<p>die Hochschule für Fremdsprachen<br />
+外国语大学</p>
+</blockquote>
+<blockquote>
+<p>die Menschheit will in Frieden leben.<br />
+人类希望在和平环境里生活。</p>
+</blockquote>
+<blockquote>
+<p>Bei Licht besehen<br />
+严格说来</p>
+</blockquote>
+<blockquote>
+<p>in Hülle und Fülle<br />
+大量地</p>
+</blockquote>
+<h3 id="6-列举人或物时无冠词"><a class="header" href="#6-列举人或物时无冠词">6. 列举人或物时无冠词。</a></h3>
+<blockquote>
+<p>Haupttür und Treppe lagen auf dieser Schmalseite, dem Gewächshaus gegenüber.<br />
+大门和楼梯在这狭窄的一侧，花房的对面。</p>
+</blockquote>
+<blockquote>
+<p>Frühling, Sommer, Herbst und Winter sind die vier Jahreszeiten.<br />
+春夏秋冬是一年的四季。</p>
+</blockquote>
+<h3 id="7-wie构成的比喻中无冠词"><a class="header" href="#7-wie构成的比喻中无冠词">7. wie构成的比喻中无冠词。</a></h3>
+<blockquote>
+<p>Er ist so dumm wie Bohnenstroh.<br />
+他笨得像块木头。</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="04-代词基础"><a class="header" href="#04-代词基础">04-代词基础</a></h1>
+<p>介绍一些常用的基础性代词。包括这些类型中较为常见的一部分：</p>
+<ol>
+<li>人称代词（Personalpronomen）</li>
+<li>物主代词（Possessivpronomen）</li>
+<li>反身代词（Reflexivpronomen）</li>
+<li>不定代词（Indefinitpronomen）</li>
+<li>指示代词（Demonstrativpronomen）</li>
+</ol>
+<h2 id="人称代词物主代词和反身代词"><a class="header" href="#人称代词物主代词和反身代词">人称代词、物主代词和反身代词</a></h2>
+<h3 id="人称代词名词性物主代词和反身代词的变格"><a class="header" href="#人称代词名词性物主代词和反身代词的变格">人称代词、名词性物主代词和反身代词的变格</a></h3>
+<p>人称代词需要根据其在句子中所属的格来进行变格。</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>我</th><th>你</th><th>他</th><th>她</th><th>它</th><th>我们</th><th>你们</th><th>他们</th><th>您/您们</th></tr></thead><tbody>
+<tr><td>第一格</td><td>ich</td><td>du</td><td>er</td><td>sie</td><td>es</td><td>wir</td><td>ihr</td><td>sie</td><td>Sie</td></tr>
+<tr><td>第三格</td><td>mir</td><td>dir</td><td>ihm</td><td>ihr</td><td>ihm</td><td>uns</td><td>euch</td><td>ihnen</td><td>Ihnen</td></tr>
+<tr><td>第四格</td><td>mich</td><td>dich</td><td>ihn</td><td>sie</td><td>es</td><td>uns</td><td>euch</td><td>sie</td><td>Sie</td></tr>
+<tr><td>物主代词<br>（名词性）</td><td>mein</td><td>dein</td><td>sein</td><td>ihr</td><td>sein</td><td>unser</td><td>euer</td><td>ihr</td><td>Ihr</td></tr>
+<tr><td>反身代词<br>（第三格）</td><td>mir</td><td>dir</td><td>sich</td><td>sich</td><td>sich</td><td>uns</td><td>euch</td><td>sich</td><td>sich</td></tr>
+<tr><td>反身代词<br>（第四格）</td><td>mich</td><td>dich</td><td>sich</td><td>sich</td><td>sich</td><td>uns</td><td>euch</td><td>sich</td><td>sich</td></tr>
+</tbody></table>
+</div>
+<h3 id="形容词性物主代词的变格"><a class="header" href="#形容词性物主代词的变格">形容词性物主代词的变格</a></h3>
+<p>形容词性物主代词以其阳性第一格为“基本形”。其基本形与名词性物主代词相同，变格则按照不定冠词变格，在基本形后加上相应后缀。以mein-为例：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>mein</td><td>mein</td><td>meine</td><td>meine</td></tr>
+<tr><td>第二格</td><td>meines</td><td>meines</td><td>meiner</td><td>meiner</td></tr>
+<tr><td>第三格</td><td>meinem</td><td>meinem</td><td>meiner</td><td>meinen</td></tr>
+<tr><td>第四格</td><td>meinen</td><td>mein</td><td>meine</td><td>meine</td></tr>
+</tbody></table>
+</div>
+<p>特殊地，euer在添加后缀前，要先将基本形变为eur-。不需要添加后缀时仍为euer。即：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>euer</td><td>euer</td><td>eure</td><td>eure</td></tr>
+<tr><td>第二格</td><td>eures</td><td>eures</td><td>eurer</td><td>eurer</td></tr>
+<tr><td>第三格</td><td>eurem</td><td>eurem</td><td>eurer</td><td>euren</td></tr>
+<tr><td>第四格</td><td>euren</td><td>euer</td><td>eure</td><td>eure</td></tr>
+</tbody></table>
+</div>
+<h3 id="英德语人称代词的区别"><a class="header" href="#英德语人称代词的区别">英德语人称代词的区别</a></h3>
+<p>英语的it和德语的es都可做逻辑主语。不同的是，it可以指代一切物，而es一般只指代中性名词。对于阳性和阴性的名词，德语则对应地用er和sie来指代。试比较：</p>
+<blockquote>
+<p>Where is my pen? Who has <strong>it</strong>?<br />
+Wo ist mein Füller? Wer hat <strong>ihn</strong> genommen?<br />
+我的钢笔在哪里？谁拿了它？</p>
+</blockquote>
+<h2 id="不定代词"><a class="header" href="#不定代词">不定代词</a></h2>
+<p>这里介绍两种基础的不定代词：ein-和kein-。</p>
+<h3 id="不定代词ein-"><a class="header" href="#不定代词ein-">不定代词ein-</a></h3>
+<h4 id="不定代词ein-的变格"><a class="header" href="#不定代词ein-的变格">不定代词ein-的变格</a></h4>
+<p>不定代词ein-无第二格形式，在复数时用welche。其变格表为：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>einer</td><td>ein(e)s</td><td>eine</td><td>welche</td></tr>
+<tr><td>第二格</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>第三格</td><td>einem</td><td>einem</td><td>einer</td><td>welchen</td></tr>
+<tr><td>第四格</td><td>einen</td><td>ein(e)s</td><td>eine</td><td>welche</td></tr>
+</tbody></table>
+</div>
+<p>有语法解释将其看作三种不定代词——einer，ein(e)s，eine，分别用于指代阳性、中性和阴性的名词。如此，就可以将其变格视为“按照不定冠词变格”。即：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>einer</th><th>ein(e)s</th><th>eine</th><th>welche</th></tr></thead><tbody>
+<tr><td>第一格</td><td>-</td><td>-</td><td>-e</td><td>-e</td></tr>
+<tr><td>第二格</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>第三格</td><td>-em</td><td>-em</td><td>-er</td><td>-en</td></tr>
+<tr><td>第四格</td><td>-en</td><td>-</td><td>-e</td><td>-e</td></tr>
+</tbody></table>
+</div>
+<h4 id="不定代词ein-的用法"><a class="header" href="#不定代词ein-的用法">不定代词ein-的用法</a></h4>
+<h5 id="1-指代某类人或物中的某一个或任何一个"><a class="header" href="#1-指代某类人或物中的某一个或任何一个">1. 指代某类人或物中的某一个或任何一个。</a></h5>
+<blockquote>
+<p>Danach habe ich <strong>einen</strong> gefragt.<br />
+我向人打听过这事。</p>
+</blockquote>
+<blockquote>
+<p>Ist es <strong>einer</strong> von euch?<br />
+这事你们中的一个吧？</p>
+</blockquote>
+<h5 id="2-指代上下文中出现的名词"><a class="header" href="#2-指代上下文中出现的名词">2. 指代上下文中出现的名词。</a></h5>
+<p>如果指代的名词并未提及，那么对人用阳性或阴性形式，对物用中性形式。</p>
+<blockquote>
+<p>Brauchen Sie Hefte? Hier ist <strong>eins</strong>.<br />
+您需要练习本吗？这里有一本。</p>
+</blockquote>
+<blockquote>
+<p>Wir haben keine Zigaretten, ich hole schnell <strong>welche</strong>.<br />
+我们没有香烟了，我赶快去买点儿。</p>
+</blockquote>
+<h5 id="3-在口语中表示人人们有人"><a class="header" href="#3-在口语中表示人人们有人">3. 在口语中表示人、人们、有人。</a></h5>
+<p>相当于不定代词man。</p>
+<blockquote>
+<p>Das kann <strong>einer</strong> (man) doch nicht wissen.<br />
+这是人们不可能不知道的呀。</p>
+</blockquote>
+<h3 id="不定代词kein-"><a class="header" href="#不定代词kein-">不定代词kein-</a></h3>
+<h4 id="不定代词kein-的变格"><a class="header" href="#不定代词kein-的变格">不定代词kein-的变格</a></h4>
+<p>不定代词kein-是不定代词ein-的否定形式（即在不定代词ein-前加上前缀k-），其按照不定代词ein-变格。如下表：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>keiner</td><td>kein(e)s</td><td>keine</td><td>keine</td></tr>
+<tr><td>第二格</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>第三格</td><td>keinem</td><td>keinem</td><td>keiner</td><td>keinen</td></tr>
+<tr><td>第四格</td><td>keinen</td><td>kein(e)s</td><td>keine</td><td>keine</td></tr>
+</tbody></table>
+</div>
+<h4 id="不定代词kein-的用法"><a class="header" href="#不定代词kein-的用法">不定代词kein-的用法</a></h4>
+<p>表示没有一个人或物。</p>
+<blockquote>
+<p>Das weiß <strong>keiner</strong>.<br />
+这事谁也不知道。</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>
+<p>Hast du kein Geld？</p>
+</li>
+<li>
+<p>Nein, ich habe <strong>keins</strong>.</p>
+</li>
+<li>
+<p>你没有钱吗？</p>
+</li>
+<li>
+<p>是的，我没有钱。</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="指示代词"><a class="header" href="#指示代词">指示代词</a></h2>
+<p>这里介绍几种基础的指示代词：der，das，die；dies-，jen-。</p>
+<h3 id="指示代词derdasdie"><a class="header" href="#指示代词derdasdie">指示代词der，das，die</a></h3>
+<h4 id="指示代词derdasdie的变格"><a class="header" href="#指示代词derdasdie的变格">指示代词der，das，die的变格</a></h4>
+<p>指示代词der，das，die的指示意义要比定冠词强。它们的变格略不同于定冠词：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>der</td><td>das</td><td>die</td><td>die</td></tr>
+<tr><td>第二格</td><td>dessen</td><td>dessen</td><td>deren</td><td>deren/derer</td></tr>
+<tr><td>第三格</td><td>dem</td><td>dem</td><td>der</td><td>denen</td></tr>
+<tr><td>第四格</td><td>den</td><td>das</td><td>die</td><td>die</td></tr>
+</tbody></table>
+</div>
+<h4 id="指示代词derdasdie的用法"><a class="header" href="#指示代词derdasdie的用法">指示代词der，das，die的用法</a></h4>
+<h5 id="1-指示某明确指定的人或物常位于句首"><a class="header" href="#1-指示某明确指定的人或物常位于句首">1. 指示某明确指定的人或物，常位于句首。</a></h5>
+<blockquote>
+<p>Dort wohnt Martin. <strong>Den</strong> (= Martin) will ich unbedingt besuchen.<br />
+马丁住在那里。我一定得去看望他。</p>
+</blockquote>
+<blockquote>
+<p>Ich erinnere mich <strong>derer</strong>, die an der Diskussion teilgenommen haben.<br />
+我想起那些参加讨论的人们。</p>
+</blockquote>
+<h5 id="2-作定语与名词一起用需要重读以突出指示意义"><a class="header" href="#2-作定语与名词一起用需要重读以突出指示意义">2. 作定语与名词一起用，需要重读以突出指示意义。</a></h5>
+<blockquote>
+<p><strong>Die</strong> Aufgabe ist von großer Wichtigkeit.<br />
+这项任务很重要。</p>
+</blockquote>
+<h5 id="3-指示代词das能够通用地指示阴阳中性与单复数的名词或一个句子"><a class="header" href="#3-指示代词das能够通用地指示阴阳中性与单复数的名词或一个句子">3. 指示代词das能够通用地指示阴阳中性与单复数的名词，或一个句子。</a></h5>
+<blockquote>
+<p>Siehst du den Jungen und das Mädchen dort? <strong>Das</strong> (= der Junge und das Mädchen) sind meine Kinder.<br />
+你看见那里的小男孩和小姑娘了吗？他们是我的孩子。</p>
+</blockquote>
+<h3 id="指示代词dies-和jen-"><a class="header" href="#指示代词dies-和jen-">指示代词dies-和jen-</a></h3>
+<h4 id="指示代词dies-和jen-的变格"><a class="header" href="#指示代词dies-和jen-的变格">指示代词dies-和jen-的变格</a></h4>
+<p>指示代词dies-和jen-的变格按照不定代词ein-变格。即：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>dieser/jener</td><td>dieses/jenes</td><td>diese/jene</td><td>diese/jene</td></tr>
+<tr><td>第二格</td><td>dieses/jenes</td><td>dieses/jenes</td><td>dieser/jener</td><td>dieser/jener</td></tr>
+<tr><td>第三格</td><td>diesem/jenem</td><td>diesem/jenem</td><td>dieser/jener</td><td>diesen/jenen</td></tr>
+<tr><td>第四格</td><td>diesen/jenen</td><td>dieses/jenes</td><td>diese/jene</td><td>diese/jene</td></tr>
+</tbody></table>
+</div>
+<p>与不定代词ein-的模式类似地，这些也可以理解为六种不同的指示代词——dieser，dieses，diese，jener，jenes，jene，按照不定冠词变格：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>dieser/jener</th><th>dieses/jenes</th><th>diese/jene</th><th>diese/jene</th></tr></thead><tbody>
+<tr><td>第一格</td><td>-</td><td>-</td><td>-e</td><td>-e</td></tr>
+<tr><td>第二格</td><td>-es</td><td>-es</td><td>-er</td><td>-er</td></tr>
+<tr><td>第三格</td><td>-em</td><td>-em</td><td>-er</td><td>-en</td></tr>
+<tr><td>第四格</td><td>-en</td><td>-</td><td>-e</td><td>-e</td></tr>
+</tbody></table>
+</div>
+<h4 id="指示代词dies-和jen-的用法"><a class="header" href="#指示代词dies-和jen-的用法">指示代词dies-和jen-的用法</a></h4>
+<p>指示代词dies-和jen-的基本用法和指示代词der，das，die完全相同，只是指示意义更加明确。以下是一些需要注意的：</p>
+<h5 id="1-dies-和jen-在指称上的区别"><a class="header" href="#1-dies-和jen-在指称上的区别">1. dies-和jen-在指称上的区别。</a></h5>
+<ol>
+<li>dies-一般表示空间或时间上较近的人或物，jen-则一般表示较远的人或物。</li>
+<li>用dies-和jen-对前述句子中的两个名词进行指称，dies-一般指称“后者”，jen-一般指称“前者”。</li>
+</ol>
+<blockquote>
+<p>Hier sind viele neue Häuser. <strong>Die(es)</strong> ist eine Bank. <strong>Jenes</strong> ist ein Kino.<br />
+这里有许多新的房子。这是一家银行，那是一家电影院。</p>
+</blockquote>
+<h5 id="2-dieses与das类似可以进行通用指示"><a class="header" href="#2-dieses与das类似可以进行通用指示">2. dies(es)与das类似，可以进行通用指示。</a></h5>
+<blockquote>
+<p>All <strong>dies</strong> interessiert uns sehr. 
+所有这一切我们都很感兴趣。</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="theme/sidebar.js"></script>
+
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </body>
+</html>

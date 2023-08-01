@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>名词的性数格 - Deutschen-Grammatik</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/style.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../Deutschen-Grammatik/01-封面与入门/02-资料简介.html">资料简介</a></li><li class="chapter-item expanded affix "><a href="../../Deutschen-Grammatik/01-封面与入门/01-封面.html">封面</a></li><li class="chapter-item expanded affix "><a href="../../Deutschen-Grammatik/01-封面与入门/03-发音规则.html">发音规则</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">基础语法体系</li><li class="chapter-item expanded "><a href="../../Deutschen-Grammatik/02-德语语法笔记/01-简单句的结构.html"><strong aria-hidden="true">1.</strong> 简单句的结构</a></li><li class="chapter-item expanded "><a href="../../Deutschen-Grammatik/02-德语语法笔记/02-名词的性数格.html" class="active"><strong aria-hidden="true">2.</strong> 名词的性数格</a></li><li class="chapter-item expanded "><a href="../../Deutschen-Grammatik/02-德语语法笔记/03-名词的冠词.html"><strong aria-hidden="true">3.</strong> 名词的冠词</a></li><li class="chapter-item expanded "><a href="../../Deutschen-Grammatik/02-德语语法笔记/04-代词基础.html"><strong aria-hidden="true">4.</strong> 代词基础</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Deutschen-Grammatik</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <h1 id="02-名词的性数格"><a class="header" href="#02-名词的性数格">02-名词的性数格</a></h1>
+<h2 id="名词的特点"><a class="header" href="#名词的特点">名词的特点</a></h2>
+<p>德语的名词在句子中始终需要首字母大写。</p>
+<p>德语的名词有三要素：</p>
+<ol>
+<li>性（Genus）</li>
+<li>数（Numerus）</li>
+<li>格（Kasus）</li>
+</ol>
+<p>名词的三要素有时会导致名词自身的变形，也会导致句中与其相关的其他词汇的变形。</p>
+<h2 id="名词的性"><a class="header" href="#名词的性">名词的性</a></h2>
+<p>名词的性分为三种：</p>
+<div class="table-wrapper"><table><thead><tr><th>性</th><th>简称</th></tr></thead><tbody>
+<tr><td>阳性</td><td>m. (maskulin)</td></tr>
+<tr><td>中性</td><td>n. (neutral)</td></tr>
+<tr><td>阴性</td><td>f. (feminin)</td></tr>
+</tbody></table>
+</div>
+<p>名词的性的规律不多，部分可以根据常见词尾进行猜测。例如：</p>
+<div class="table-wrapper"><table><thead><tr><th>性</th><th>常见词尾</th></tr></thead><tbody>
+<tr><td>阳性</td><td>-ant，-ast，-är，-ent，-eur，-iker，-ismus，-ist，-ling，-loge，-ner，-oph，-ör，-tor</td></tr>
+<tr><td>中性</td><td>-chen，-em，-ett，-lein，-ma，-ment，-nis，-o，-sal，-tum，-um</td></tr>
+<tr><td>阴性</td><td>-ade，-ät，-enz，-erei，-heit，-ie，-ik，-in，-ine，ion，-ive，-keit，-schaft，-sis，-thek，-unft，-ung，-ur</td></tr>
+</tbody></table>
+</div>
+<h2 id="名词的数"><a class="header" href="#名词的数">名词的数</a></h2>
+<h3 id="名词的数的区分"><a class="header" href="#名词的数的区分">名词的数的区分</a></h3>
+<p>名词的数分为两种：</p>
+<div class="table-wrapper"><table><thead><tr><th>数</th><th>简称</th></tr></thead><tbody>
+<tr><td>单数</td><td>Sg. (Singular)</td></tr>
+<tr><td>复数</td><td>Pl. (Plural)</td></tr>
+</tbody></table>
+</div>
+<h3 id="名词的数的变形"><a class="header" href="#名词的数的变形">名词的数的变形</a></h3>
+<p>名词在复数形式下会发生变形。变形有如下形式：</p>
+<ol>
+<li>添加后缀；</li>
+<li>变元音；</li>
+<li>不规则变形。</li>
+</ol>
+<h4 id="添加后缀"><a class="header" href="#添加后缀">添加后缀</a></h4>
+<p>添加后缀有一定的规律：</p>
+<div class="table-wrapper"><table><thead><tr><th>后缀</th><th>名词类型</th></tr></thead><tbody>
+<tr><td>-(e)n</td><td>以-e，-heit，-keit，-schaft，-rei，-ie，-ion，-ur，-ung结尾的很多阴性名词；<br>以-or，-ant，-ent，ist结尾的阳性名词；</td></tr>
+<tr><td>-er</td><td>单音节或短小的很多阳性或中性名词；<br>以-tum结尾的很多阳性或中性名词；</td></tr>
+<tr><td>-e</td><td>单音节或短小的很多名词；<br>以-al，-ar，-är，-ich，-ling结尾的很多阳性名词；</td></tr>
+<tr><td>-s</td><td>以-a，-i，-o，-y结尾的很多名词；<br>大多数外来词；<br>缩写；</td></tr>
+<tr><td>-</td><td>以-er，-en，-el，-ler结尾的很多阳性或中性名词；<br>以-chen，-lein结尾的很多中性名词；</td></tr>
+<tr><td>-nen</td><td>以-in结尾的很多表示职业的阴性名词；</td></tr>
+<tr><td>-se</td><td>以-nis结尾的很多阳性或中性名词；</td></tr>
+</tbody></table>
+</div>
+<p>以上表格并不全面，也有一些其他较为少见的后缀，如：</p>
+<blockquote>
+<p>das Material → die Material<strong>ien</strong>;</p>
+</blockquote>
+<h4 id="变元音"><a class="header" href="#变元音">变元音</a></h4>
+<p>变元音主要是以下四种情况：</p>
+<ol>
+<li>a→ä；</li>
+<li>o→ö；</li>
+<li>u→ü；</li>
+<li>au→äu。</li>
+</ol>
+<p>变元音一般出现在添加后缀-er，-e，-（无后缀）的情况中。</p>
+<h4 id="不规则变形"><a class="header" href="#不规则变形">不规则变形</a></h4>
+<p>少量名词的复数形式是不规则变形的。如：</p>
+<blockquote>
+<p>die Firma → die Firmen;<br />
+das Datum → die Daten;</p>
+</blockquote>
+<h2 id="名词的格"><a class="header" href="#名词的格">名词的格</a></h2>
+<h3 id="名词的格的区分"><a class="header" href="#名词的格的区分">名词的格的区分</a></h3>
+<p>名词的格分为四种，用于划分名词在句子中的不同语法功能。分别是：</p>
+<div class="table-wrapper"><table><thead><tr><th>格</th><th>简称</th><th>主要语法功能</th></tr></thead><tbody>
+<tr><td>第一格/主格</td><td>N. (Nominativ)</td><td>主语/表语</td></tr>
+<tr><td>第二格/属格</td><td>G. (Genitiv)</td><td>定语</td></tr>
+<tr><td>第三格/受格/与格</td><td>D. (Dativ)</td><td>间接宾语</td></tr>
+<tr><td>第四格/宾格</td><td>A. (Akkusativ)</td><td>直接宾语</td></tr>
+</tbody></table>
+</div>
+<p>提供一个例子：</p>
+<blockquote>
+<p>Der Wagen der Fabrik schenkte dem Institut einen Tisch.<br />
+工厂的汽车给学院运送来一张桌子。</p>
+</blockquote>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Der Wagen</th><th>der Fabrik</th><th>schenkte</th><th>dem Institut</th><th>einen Tisch</th></tr></thead><tbody>
+<tr><td>汉语</td><td>汽车</td><td>工厂</td><td>运送</td><td>学院</td><td>一张桌子</td></tr>
+<tr><td>格</td><td>第一格</td><td>第二格</td><td>谓语动词</td><td>第三格</td><td>第四格</td></tr>
+</tbody></table>
+</div>
+<p>这是最常见的四格用法，也最方便理解。当然，也有其他语法功能的情况，这在第三格与第四格的区分上尤为显著。</p>
+<h3 id="第三格与第四格"><a class="header" href="#第三格与第四格">第三格与第四格</a></h3>
+<p>第三格与第四格区分的情况主要有：</p>
+<ol>
+<li>谓语动词的要求；</li>
+<li>介词的要求；</li>
+<li>其他特殊情况。</li>
+</ol>
+<h4 id="谓语动词的要求"><a class="header" href="#谓语动词的要求">谓语动词的要求</a></h4>
+<p>及物动词支配第四格名词作宾语。需要支配双宾语时，就会区分出直接宾语（第四格）和间接宾语（第三格），这是最常见的区分，在上面的例子中就可以看到。</p>
+<p>不及物动词不能支配第四格名词，所以直接要求第三格名词作宾语。例如：</p>
+<blockquote>
+<p>Der Pullover gefällt <strong>mir</strong>.<br />
+这件毛衣正合我意。</p>
+</blockquote>
+<div class="table-wrapper"><table><thead><tr><th></th><th>Der Pullover</th><th>gefällt</th><th>mir</th></tr></thead><tbody>
+<tr><td>汉语</td><td>这件毛衣</td><td>满意</td><td>我</td></tr>
+<tr><td>格</td><td>第一格</td><td>谓语动词</td><td>第三格</td></tr>
+</tbody></table>
+</div>
+<h4 id="介词的要求"><a class="header" href="#介词的要求">介词的要求</a></h4>
+<p>部分介词只要求后面的名词以第四格的形式出现，如für，gegen，durch，um，ohne等；</p>
+<p>部分介词只要求后面的名词以第三格的形式出现，如aus，außer，bei，entgegen，entsprechend，gegenüber，gemäß，mit，nach，nahe，nebst，samt，seit，von，zu，zufolge等；</p>
+<p>部分介词后面可以支配第三格，也可以支配第四格。一般是表示方位的介词，如in，an，auf，vor，hinter，über，unter，neben，zwischen等。这种情况下，支配第三格与第四格的句意是有区别的。例如：</p>
+<blockquote>
+<p>Ich fahre <strong>in die</strong> Stadt. 我开车去城里。（第四格）<br />
+Ich fahre <strong>in der</strong> Stadt. 我在城里开车。（第三格）</p>
+</blockquote>
+<p>因此，在这时：针对第四格提问时，特殊疑问词用wohin（去哪里）；针对第三格提问时，特殊疑问词用wo（在哪里）。</p>
+<h4 id="其他特殊情况"><a class="header" href="#其他特殊情况">其他特殊情况</a></h4>
+<h5 id="形容词的要求"><a class="header" href="#形容词的要求">形容词的要求</a></h5>
+<p>部分可以支配名词的形容词，要求支配第四格名词。如：</p>
+<blockquote>
+<p>Das Ergebnis ist <strong>diesen Aufwand</strong> wert.<br />
+结果是值得这个花费的。</p>
+</blockquote>
+<h5 id="状语第四格"><a class="header" href="#状语第四格">状语第四格</a></h5>
+<p>名词单独构成时间状语或地点状语时，在句中以第四格形式出现。如：</p>
+<blockquote>
+<p>Ich trinke <strong>jeden Mittag</strong> eine Tasse Tee.<br />
+我每天中午喝一杯茶。</p>
+</blockquote>
+<h5 id="绝对第四格"><a class="header" href="#绝对第四格">绝对第四格</a></h5>
+<p>以第四格形式单独出现的句子成分，可以理解为省略了谓语动词的结构。如：</p>
+<blockquote>
+<p><strong>Das Messer</strong> in der Hand, kam er auf sie zu.<br />
+他拿着刀朝着她过来了。</p>
+</blockquote>
+<h5 id="自由第三格"><a class="header" href="#自由第三格">自由第三格</a></h5>
+<p>在表达“对某人来说”“某人觉得”等意义时，人无法作为主语（第一格）出现，因此以第三格形式出现。如：</p>
+<blockquote>
+<p>Es ist <strong>mir</strong> egal.<br />
+这事对我来说无所谓。</p>
+</blockquote>
+<blockquote>
+<p><strong>Mir</strong> ist langweilig.<br />
+我感觉无聊。</p>
+</blockquote>
+<p>如果人以第一格形式出现，则会改变句意：</p>
+<blockquote>
+<p><strong>Ich</strong> bin langweilig.<br />
+我这个人很无聊。 </p>
+</blockquote>
+<h3 id="名词的格的变形"><a class="header" href="#名词的格的变形">名词的格的变形</a></h3>
+<p>名词在不同格的形式下，有时会发生变形。格的变形只有一种：添加后缀。这一变形在单数第二格的阳性和中性、复数第三格的情况下发生：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>阳性</th><th>中性</th><th>阴性</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td>第二格</td><td>-s/-es</td><td>-s/-es</td><td>-</td><td>-</td></tr>
+<tr><td>第三格</td><td>-</td><td>-</td><td>-</td><td>-n</td></tr>
+<tr><td>第四格</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+</tbody></table>
+</div>
+<p>在“-s/-es”的情况中，有如下规则：</p>
+<ol>
+<li>多音节名词添加-s；</li>
+<li>单音节名词多数添加-es；</li>
+<li>以-s，-ss，-ß，-x，-z，-tz结尾的名词添加-es。</li>
+</ol>
+<p>例如：</p>
+<blockquote>
+<p>des Lehrer<strong>s</strong>; des Mann<strong>es</strong>; des Glas<strong>es</strong></p>
+</blockquote>
+<p>同时需要注意，对于复数第三格名词，其复数形式已经变形为以n或s结尾，就不另外添加格的变形后缀-n了。</p>
+<h2 id="弱变化名词"><a class="header" href="#弱变化名词">弱变化名词</a></h2>
+<h3 id="弱变化名词的基本规则"><a class="header" href="#弱变化名词的基本规则">弱变化名词的基本规则</a></h3>
+<p>德语中有一部分阳性名词属于“弱变化名词”，这类名词在各种场合下（除阳性单数第一格）的变形都是添加后缀-n或-en。这一变形优先于通用的性数格变形规则。</p>
+<p>以弱变化名词“Mensch”的变化为例：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>单数（阳性）</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>der Mensch</td><td>die Mensch<strong>en</strong></td></tr>
+<tr><td>第二格</td><td>des Mensch<strong>en</strong></td><td>der Mensch<strong>en</strong></td></tr>
+<tr><td>第三格</td><td>dem Mensch<strong>en</strong></td><td>den Mensch<strong>en</strong></td></tr>
+<tr><td>第四格</td><td>den Mensch<strong>en</strong></td><td>die Mensch<strong>en</strong></td></tr>
+</tbody></table>
+</div>
+<h3 id="弱变化名词的例外情况"><a class="header" href="#弱变化名词的例外情况">弱变化名词的例外情况</a></h3>
+<p>der Herr和das Herz的复数形式为后缀-en，与弱变化形式的后缀不一致。此时，弱变化只在单数的情况下应用。注意到，das Herz是唯一的中性弱变化名词，它的后缀也是特殊的。</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>单数后缀</th><th>复数后缀</th></tr></thead><tbody>
+<tr><td>der Herr</td><td>-n</td><td>-en</td></tr>
+<tr><td>das Herz</td><td>-ens</td><td>-en</td></tr>
+</tbody></table>
+</div>
+<p>有另外7个名词的后缀也是特殊的。它们在单数第二格的情况下，后缀是-ns；在其他情况下，后缀仍是正常的-n。这些名词是：Name，Wille，Same，Glaube，Buchstabe，Funke，Gedanke。例如：</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th>单数（阳性）</th><th>复数</th></tr></thead><tbody>
+<tr><td>第一格</td><td>der Name</td><td>die Name<strong>n</strong></td></tr>
+<tr><td>第二格</td><td>des Name<strong>ns</strong></td><td>der Name<strong>n</strong></td></tr>
+<tr><td>第三格</td><td>dem Name<strong>n</strong></td><td>den Name<strong>n</strong></td></tr>
+<tr><td>第四格</td><td>den Name<strong>n</strong></td><td>die Name<strong>n</strong></td></tr>
+</tbody></table>
+</div>
+<h3 id="弱变化名词的判断"><a class="header" href="#弱变化名词的判断">弱变化名词的判断</a></h3>
+<p>弱变化名词主要是以下这些名词：</p>
+<ol>
+<li>以-e结尾的，表示人或动物的阳性名词；</li>
+<li>以-e结尾的，不表示人和动物的阳性名词，单数第二格的后缀为-ns；</li>
+<li>以-ant，-at，-ent，-et，-graph，-ik，-ist，-it，-nom，-og(e)，-ot，-soph，-und，-rand结尾的很多外来阳性名词；</li>
+<li>其他一些阳性名词；唯一的中性弱变化名词das Herz。</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../Deutschen-Grammatik/02-德语语法笔记/01-简单句的结构.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../Deutschen-Grammatik/02-德语语法笔记/03-名词的冠词.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../Deutschen-Grammatik/02-德语语法笔记/01-简单句的结构.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../Deutschen-Grammatik/02-德语语法笔记/03-名词的冠词.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../../theme/sidebar.js"></script>
+
+
+    </body>
+</html>
